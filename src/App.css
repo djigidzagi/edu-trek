@@ -1,0 +1,86 @@
+
+.App-header {
+  background-color: #2ecc71;
+  width: 1366px;
+  height: 70px;
+  display: flex;
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  font-size: calc(10px + 2vmin);
+  /*color: white;*/
+  justify-content: start;
+}
+
+.img-header {
+  width: 164.54px;
+  height: 35px;
+  margin-left: 19px;
+  margin-top: 17.5px;
+  background: transparent url('utils/logo.svg') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.search {
+  background-color: #f8f8f8;
+}
+
+.search-bar {
+  width: 326px;
+  height: 16px;
+  margin-top: 17.5px;
+  /*margin-top: 16px;*/
+  margin-left: 58.46px;
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  opacity: 60%;
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.search-bar .search-icon {
+  font-size: 20px;
+  color: #888;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.sing-out {
+  margin-left: auto;  /* Отступ слева 31px */
+  margin-right: 31px;
+  /*margin-left: auto;*/
+  /*padding-left: 31px;*/
+  display: flex;
+  align-items: center;
+}
+
+.img-logout {
+  width: 25px;
+  height: 25px;
+}
+
+.button-sing-out {
+  height: 18px;
+  width: 60px;
+  background-color: #2ecc71;
+  color: white;              /* Задаём белый цвет текста */
+  border: none;              /* Убираем рамку */
+  /*outline: none;             !* Убираем обводку при фокусе *!*/
+  /*padding: 10px 20px;        !* Отступы внутри кнопки *!*/
+  white-space: nowrap;       /* Запрещаем перенос текста */
+  font-size: 16px;           /* Размер шрифта */
+  cursor: pointer;
+}
