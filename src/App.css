@@ -1,5 +1,14 @@
 
-.App-header {
+.main-menu-box {
+  display: flex;
+}
+
+/*.content {*/
+/*  padding: 20px;*/
+/*  flex-grow: 1;*/
+/*}*/
+
+.app-header {
   background-color: #2ecc71;
   width: 1366px;
   height: 70px;
@@ -7,7 +16,7 @@
   /*flex-direction: column;*/
   /*align-items: center;*/
   /*justify-content: center;*/
-  font-size: calc(10px + 2vmin);
+  /*font-size: calc(10px + 2vmin);*/
   /*color: white;*/
   justify-content: start;
 }
@@ -83,4 +92,43 @@
   white-space: nowrap;       /* Запрещаем перенос текста */
   font-size: 16px;           /* Размер шрифта */
   cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  /*padding: 0;*/
+  /*margin: 0;*/
+  list-style-type: none !important;
+}
+
+.menu li {
+  margin-bottom: 5px; /* Отступы между элементами */
+  list-style-type: none;
+}
+
+.menu li:last-child {
+  margin-bottom: 0; /* Убираем отступ у последнего элемента */
+}
+
+.contact-book-box {
+  width: 1093px;
+  /*height: 1500px;  !* временно *!*/
+  margin-left: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-bar {
+  width: 1093px;
+  height: 50px;
+  background-color: #3EB470;
+}
+
+.contact-book {
+  background-color: yellow;
+  height: 1000px;
+  border-left: 3px #707070;
+  padding-left: 10px;
+
 }
