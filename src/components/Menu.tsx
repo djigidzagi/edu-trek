@@ -1,4 +1,4 @@
-import React, {StrictMode} from "react";
+import React from "react";
 import Create from "./Create";
 import Active from "./Active";
 import Contacts from "./Contacts";
@@ -6,13 +6,18 @@ import Groups from "./Groups";
 import Students from "./Students";
 import Lecturers from "./Lecturers";
 
-const Menu: React.FC = () => {
+interface MenuProps {
+    onCreateClick: () => void;
+    onActiveClick: () => void;
+}
+
+const Menu: React.FC<MenuProps> = ({ onCreateClick, onActiveClick }) => {
     return (
         <aside className="sidemenu">
-            <Create />
+            <Create onCreateClick={onCreateClick} />
             <nav className="menu">
                 <ul>
-                    <li><Active /></li>
+                    <li><Active onClick={onActiveClick} /></li>
                     <li><Contacts /></li>
                     <li><Groups /></li>
                     <li><Students /></li>

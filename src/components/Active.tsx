@@ -1,9 +1,12 @@
 import React from "react";
 
+interface ActiveProps {
+    onClick: () => void;
+}
 
-const Active:React.FC = () => {
-    return(
-        <button className="active">
+const Active: React.FC<ActiveProps> = ({ onClick }) => {
+    return (
+        <button className="active" onClick={onClick}>
             Active
         </button>
     );
