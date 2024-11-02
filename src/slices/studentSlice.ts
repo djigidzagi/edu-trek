@@ -13,9 +13,9 @@ interface Student {
     status: string,    //?
     documents: boolean,
     commentsLog: object,  //?
-    // reminder: boolean,
-    // reminder: Date,
-    // reminder: string,
+    reminder: boolean,
+    reminderDate: Date,
+    reminderText: string,
     // fullCoursePrice: number,
     // paymentsLog: any,
     paymentProgress: number,
@@ -64,11 +64,18 @@ export const studentsSlice = createSlice({
                 student.address = action.payload.address;
             }
         },
-
+        updateStudentReminder: (state, action: PayloadAction<{ id: number; reminder: boolean; reminderDate: Date; reminderText: string }>) => {
+            const student = state.find(student => student.id === action.payload.id);
+            if (student) {
+                student.reminder = action.payload.reminder;
+                student.reminderDate = action.payload.reminderDate;
+                student.reminderDate = action.payload.reminderDate;
+            }
+        },
 
     }
 })
 
-export const {addStudent, removeStudent, updateStudentName, updateStudentSurname, updateStudentPhone, updateStudentEmail, updateStudentAddress} = studentsSlice.actions;
+export const {addStudent, removeStudent, updateStudentName, updateStudentSurname, updateStudentPhone, updateStudentEmail, updateStudentAddress, updateStudentReminder} = studentsSlice.actions;
 
 export default studentsSlice.reducer;

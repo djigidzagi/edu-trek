@@ -119,16 +119,58 @@
   flex-direction: column;
 }
 
-.status-bar {
-  width: 1093px;
-  height: 50px;
-  background-color: #3EB470;
+/*.status-bar {*/
+/*  width: 1093px;*/
+/*  height: 50px;*/
+/*  background-color: #3EB470;*/
+/*}*/
+
+.button-container-reminder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
 }
 
-.contact-book {
-  background-color: yellow;
-  height: 1000px;
-  border-left: 3px #707070;
-  padding-left: 10px;
-
+/* Выбранные даты */
+.MuiPickersDay-root.Mui-selected {
+  background-color: #3EB470 !important;
+  color: #fff !important;
 }
+
+/* Цвет рамки при фокусе */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3EB470 !important;
+}
+
+/* Цвет стрелок времени */
+.MuiSvgIcon-root {
+  color: #3EB470 !important;
+}
+
+/* Акцент на кнопках внутри календаря */
+.MuiButtonBase-root.Mui-selected {
+  background-color: #3EB470 !important;
+  color: #fff !important;
+}
+
+.MuiDialogActions-root button {
+  color: #3EB470 !important; /* Зелёный цвет для кнопки "OK" */
+}
+
+/*.button-cancel-reminder {*/
+/*  color: #2ecc71; !* Зеленый текст *!*/
+/*  padding: 6px 16px; !* Сделаем одинаковый размер с кнопкой Create *!*/
+/*  font-size: 16px;*/
+/*  border: 2px solid transparent; !* Без границы в обычном состоянии *!*/
+/*  border-radius: 20px; !* Овальная форма *!*/
+/*  background-color: transparent; !* Прозрачный фон *!*/
+/*  cursor: pointer;*/
+/*  transition: border-color 0.3s ease; !* Плавный переход для границы *!*/
+/*}*/
+
+/*.button-cancel-reminder:hover {*/
+/*  border-color: #2ecc71; !* Появляется зеленая граница при наведении *!*/
+/*  background-color: transparent;*/
+/*}*/
+
