@@ -17,7 +17,7 @@ export interface Student {
     reminderDate: Date,
     reminderText: string,
     // fullCoursePrice: number,
-    // paymentsLog: any,
+    // paymentsLog: any,    //? paymentsLog: Record<string, string>;
     paymentProgress: number,
     active: boolean;
 }
