@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
-interface Student {
+export interface Student {
     id: number,
     name: string,
     surname: string,
@@ -8,11 +8,11 @@ interface Student {
     email: string,
     address: string,
     // place:
-    groupNames: object,  //?
+    groupNames: object,  //? groupNames: Record<string, boolean>;
     // source:
-    status: string,    //?
+    status: string,    //? status: "active" | "inactive" | "graduated";
     documents: boolean,
-    commentsLog: object,  //?
+    commentsLog: object,  //? commentsLog: Record<string, string>;
     reminder: boolean,
     reminderDate: Date,
     reminderText: string,
