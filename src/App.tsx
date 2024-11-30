@@ -6,22 +6,23 @@ import {IconButton} from "@mui/material";
 import {CreateReminder, } from "./components/CreateReminder";
 import CreateContact from './components/CreateContact';
 import ContactBook from "./components/ContactBook";
+import CreateGroup from "./components/CreateGroup";
 
 
 //<CreateReminder studentId={1} />
 
 const App: React.FC = () => {
-    const [isCreateContactVisible, setCreateContactVisible] = useState(false); // Стан для контролю видимості CreateContact
-    const [isContactBookVisible, setContactBookVisible] = useState(false); // Стан для контролю видимості ContactBook
+    const [isCreateContactVisible, setCreateContactVisible] = useState(false);
+    const [isContactBookVisible, setContactBookVisible] = useState(false);
 
     const toggleCreateContact = () => {
-        setCreateContactVisible(prev => !prev); // Зміна видимості CreateContact
-        setContactBookVisible(false); // Сховати ContactBook при відкритті CreateContact
+        setCreateContactVisible(prev => !prev);
+        setContactBookVisible(false);
     };
 
     const toggleContactBook = () => {
-        setContactBookVisible(prev => !prev); // Зміна видимості ContactBook
-        setCreateContactVisible(false); // Сховати CreateContact при відкритті ContactBook
+        setContactBookVisible(prev => !prev);
+        setCreateContactVisible(false);
     };
 
     return (
@@ -31,6 +32,8 @@ const App: React.FC = () => {
                 <Menu onCreateClick={toggleCreateContact} onActiveClick={toggleContactBook} /> {/* Передаємо функції */}
                 <div className="contact-book-box">
                     {/*<CreateReminder studentId={1} />*/}
+                    {/*<CreateGroup/>*/}
+                    <CreateContact/>
                     <div className="status-bar"></div>
                     <div className="contact-book"></div>
                     {isCreateContactVisible && <CreateContact />} {/* Відображення форми */}

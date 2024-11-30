@@ -1,7 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import studentsReducer from '../slices/studentSlice';
-import groupsReducer from '../slices/groupSlice';
+import studentsReducer, {Student} from '../slices/studentSlice';
+import groupsReducer, { Group } from '../slices/groupSlice';
 
+export interface RootState {
+    groups: Group[]; // Группы должны быть массивом объектов типа Group
+    students: Student[]; // Студенты должны быть массивом объектов типа Student
+}
 export const store = configureStore({
     reducer: {
         students: studentsReducer,
@@ -9,5 +13,5 @@ export const store = configureStore({
     }
 });
 
-export type RootState = ReturnType<typeof store.getState>;
+// export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

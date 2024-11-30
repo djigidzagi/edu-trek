@@ -1,5 +1,14 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
+export enum LeadStatus {
+    Lead = "Lead",
+    InWork = "In work",
+    Consultation = "Consultation",
+    SaveForLater = "Save for Later",
+    Student = "Student",
+    Archive = "Archive"
+}
+
 export interface Student {
     id: number,
     name: string,
@@ -8,11 +17,11 @@ export interface Student {
     email: string,
     address: string,
     // place:
-    groupNames: object,  //? groupNames: Record<string, boolean>;
-    // source:
-    status: string,    //? status: "active" | "inactive" | "graduated";
+    groupNames: string[],  //? groupNames: Record<string, boolean>;
+    source: string,         //???
+    status: LeadStatus,
     documents: boolean,
-    commentsLog: object,  //? commentsLog: Record<string, string>;
+    commentsLog: string,  //? commentsLog: Record<string, string>;
     reminder: boolean,
     reminderDate: Date,
     reminderText: string,

@@ -1,7 +1,7 @@
 import React from "react";
 
 interface CreateProps {
-    onCreateClick: () => void; // Пропс для обробки кліка
+    onCreateClick: () => void;
 }
 
 const Create: React.FC<CreateProps> = ({ onCreateClick }) => {
