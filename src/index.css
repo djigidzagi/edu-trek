@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*body {*/
+/*  margin: 0;*/
+/*  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
+/*    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
+/*    sans-serif;*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*  -moz-osx-font-smoothing: grayscale;*/
+/*}*/
+
+
+/*code {*/
+/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*    monospace;*/
+/*}*/
+/*.header {*/
+/*    width: 250px;*/
+/*    background-color: #7fe897;*/
+/*    padding: 20px;*/
+/*    color: #288c3f;*/
+/*    height: 100vh;*/
+/*}*/
+
+button {
+  /*margin-top: 15px;*/
+  margin-left: initial;
+  margin-right: 8px;
+  align-items: center;
+
+  display: block;
+  width: 180px;
+  height: 40px;
+  background-color: #e0ffe0;
+  color: #2ecc71;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  /*border-radius: 25px;*/
+  border-radius: 0px 100px 100px 0px;
+  text-align: center;
+  /*transition: background-color 0.3s ease;*/
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button:hover {
+  background-color: #288c3f;
 }
+
+/*button.active {*/
+/*    font-weight: bold;*/
+/*    color: #2ECC71;*/
+/*    background-color: #e0ffe0;*/
+/*}*/
+
+.create-button{
+  margin-top: 15px;
+  margin-left: 31px;
+  margin-right: 31px;
+  align-items: center;
+  width: 110px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.contact-card {
+  border: 1px solid #ddd; /* Границя картки */
+  padding: 1rem; /* Внутрішній відступ */
+  margin-bottom: 1rem; /* Відстань між картками */
+  border-radius: 4px; /* Закруглення кутів */
+  background-color: #f9f9f9; /* Колір фону картки */
+  width: 100%; /* Ширина картки 100% від контейнера контактів */
+  max-width: 400px; /* Максимальна ширина картки */
+  /*text-align: center; !* Центрування тексту в картці *!*/
+}
+
+.create-contact-form {
+  margin-top: 20px; /* Відступ для форми */
+  padding: 20px; /* Внутрішній відступ */
+  border: 1px solid #ddd; /* Границя для форми */
+  border-radius: 8px; /* Закруглення кутів */
+  background-color: #f9f9f9; /* Колір фону для форми */
+  width: 100%; /* Ширина 100% від батьківського контейнера */
+  max-width: 400px; /* Максимальна ширина для центрування */
+  display: flex; /* Використання flexbox */
+  flex-direction: column; /* Вертикальне вирівнювання */
+}
+
+.create-contact-form label {
+  display: flex; /* Використання flexbox для label */
+  align-items: center; /* Вертикальне вирівнювання підписів */
+  margin-bottom: 10px; /* Відстань між мітками і полями */
+}
+
+.create-contact-form input {
+  margin-left: 10px; /* Відстань між міткою і полем вводу */
+  margin-bottom: 15px; /* Відстань між полями вводу */
+  padding: 8px; /* Внутрішній відступ для полів вводу */
+  border: 1px solid #ccc; /* Границя для полів вводу */
+  border-radius: 4px; /* Закруглення кутів полів */
+  width: 100%; /* Ширина полів вводу 100% від контейнера */
+}
+
+.button-container {
+  display: flex; /* Використання flexbox */
+  justify-content: flex-end; /* Вирівнювання кнопок зліва */
+  margin-top: 20px; /* Відступ зверху для кнопок */
+}
+
+.button-container button {
+  margin-right: 10px; /* Відстань між кнопками */
+}
+

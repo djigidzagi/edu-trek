@@ -1,17 +1,17 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {Student} from "./studentSlice";
 
-enum WeekDays {
+export enum WeekDays {
+    Sunday = "Sunday",
     Monday = "Monday",
     Tuesday = "Tuesday",
     Wednesday = "Wednesday",
     Thursday = "Thursday",
     Friday = "Friday",
-    Saturday = "Saturday",
-    Sunday = "Sunday"
+    Saturday = "Saturday"
 }
 
-interface Group {
+export interface Group {
     id: number,
     name: string,
     whatsAppLink: string,
